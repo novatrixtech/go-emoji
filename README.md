@@ -25,8 +25,7 @@ replased := parser.ReplaceAllStringFunc(text, func(s string) string {
 
 ```go
 parser := NewEmojiParser()
-var text = "a #💩 #and #🍦 #😳"
-var i = -1
+text := "a #💩 #and #🍦 #😳"
 replased := parser.ToHtmlEntities(text)
 // replased == "a #&#x1F4A9; #and #&#x1F366; #&#x1F633;"
 ```
@@ -35,8 +34,7 @@ replased := parser.ToHtmlEntities(text)
 
 ```go
 parser := NewEmojiParser()
-var text = "a #💩 #and #🍦 #😳"
-var i = -1
+text := "a #💩 #and #🍦 #😳"
 replased := parser.ToHtmlImages(text)
 ```
 result:
@@ -62,3 +60,4 @@ src="https://twemoji.maxcdn.com/36x36/1f633.png">
 2. Twemoji SVG [https://github.com/twitter/twemoji](https://github.com/twitter/twemoji)
 3. Unicode Emojii data [emoji-data.txt](http://www.unicode.org/Public/emoji/1.0/emoji-data.txt)
 4. Unicode Tech Report 51 [tech report](http://www.unicode.org/reports/tr51/)
+5. Contributors of the same library for the PHP https://github.com/urakozz/php-emoji-regex/pulls?q=is%3Apr+is%3Aclosed
